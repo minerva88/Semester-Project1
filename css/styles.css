@@ -1,0 +1,315 @@
+:root {
+    --fontrusso: 'Russo One', sans-serif;
+    --fontheaders: 'Oxygen', sans-serif;
+    --fonttext: 'Source Sans Pro', sans-serif;
+    --blue: #035AA6;
+    --white: #ffffff;
+    --yellow: #fcbf1e;
+    --brightblue: #40bad5;
+    --purple: #120136;
+}
+
+html {
+    min-height: 100%;
+}
+
+/*Fonts*/
+
+h1 {
+    font-family: var(--fontrusso);
+    font-size: 3em;
+    padding: 30px;
+    margin: 75px 33px;
+    color: var(--purple);
+}
+
+h2 {
+    font-family: var(--fontheaders);
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 33px;
+}
+
+p {
+    font-family: var(--fonttext);
+    font-size: 1.2em;
+    max-width: 75%;
+    padding: 15px 33px;
+    flex-wrap: wrap;
+}
+
+a, .anchor-btns {
+    font-family: var(--fontrusso);
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--white);
+    margin: 10px 20px;
+}
+
+
+/*Header*/
+
+.header {
+    height: 75px;
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 80%;
+    margin: 7px;
+}
+
+/*Navigation*/
+
+.menu-icon {
+    max-width: 70px;
+    max-height: 70%;
+    border-radius: 0px;
+    margin: 10px auto;
+}
+
+.nav, #hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ .nav {
+    display: block;
+    z-index: 1;
+    
+}
+
+#hamburger-menu:checked ~ .hamburger-label {
+    display: none;
+}
+
+ul {
+    font-family: var(--fontrusso);
+    color: var(--white);
+    background-color: var(--blue);
+    display: block;
+    text-decoration: none;
+    padding: 15px 10px 15px 20px;
+    margin: 15px 20px;
+    z-index: 1;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/*Welcome sections*/
+
+.background-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome {
+    background-image: url('../images/exhibition-1863344_1920_resized.jpg');
+}
+
+.explore-header {
+    color: var(--yellow);
+}
+
+.explore {
+    background-image: url('../images/andrew-ruiz-348421_resized.jpg');
+    color: var(--yellow);
+}
+
+.exhibitions {
+    background-image: url('../images/jesse-orrico-60373_resized.jpg');
+}
+
+.specials {
+    background-image: url('../images/mammoth-1257288_1920_resized.jpg');
+}
+
+.visit {
+    background-image: url('../images/scott-webb-102825_resized.jpg');
+}
+
+.getinvolved {
+    background-image: url('../images/genoa-956405_1920_resized.jpg');
+}
+
+/*Buttons*/
+
+.explore-btns {
+    display: flex;
+    color: var(--yellow);
+}
+
+.explore-btn {
+    background-color: var(--purple);
+    color: var(--yellow);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 33px;
+    justify-content: space-evenly;
+}
+
+/*Layout Flex Main*/
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+}
+
+.container-text {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Color scheme sections*/
+
+.purple {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.blue {
+    background-color: var(--brightblue);
+    color: var(--white);
+}
+
+.white {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.yellow {
+    background-color: var(--yellow);
+    color: var(--purple);
+}
+
+.darkblue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/*Images*/
+
+img {
+    border-radius: 30px;
+    object-fit: cover;
+    align-content: center;
+    margin: 33px 0px;
+}
+
+.roundimg {
+    border-radius: 50%;
+    max-width: 70%;
+}
+
+.centeredimg {
+    max-width: 75%;
+}
+
+/*Footer*/
+
+.footer {
+    height: 75px;
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    max-height: 60%;
+    border-radius: 0px;
+    margin: 15px;
+}
+
+/*Media Quieries*/
+
+@media only screen and (min-width: 650px){
+    /*Navigation*/
+    .nav {
+        display: inline-block;
+    }
+
+
+    li, a {
+        
+        display: inline-block;
+        text-decoration: none;
+        margin: 15px 20px 10px 20px;
+        z-index: 1;
+        
+    }
+
+    ul {
+        font-family: var(--fontrusso);
+        color: var(--blue);
+        background-color: var(--blue);
+        display: block;
+        text-decoration: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    /*Layout*/
+    .container-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        align-content: center;
+        margin: auto;
+
+    }
+
+    .background-img {
+        width: 60%;
+        min-height: 500px;
+        margin: 30px 15px;
+        
+    }
+    
+    .container-text {
+        max-width: 30%;
+        margin: 30px auto;
+    }
+
+    .container-text-half {
+        max-width: 45%;
+    }
+
+    .container-text-wide {
+        max-width: 60%;
+    }
+
+    /*Images*/
+
+    .specials {
+        width: 45%;
+    }
+
+    .roundimg {
+        border-radius: 50%;
+        max-width: 40%;
+        float: right;
+        margin: 25px;
+    }
+
+    /*Buttons*/
+
+    .explore-btn {
+        display: none;
+    }
+
+}
