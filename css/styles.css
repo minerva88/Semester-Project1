@@ -18,6 +18,7 @@ html {
 h1 {
     font-family: var(--fontrusso);
     font-size: 3em;
+    text-align: center;
     padding: 30px;
     margin: 75px 33px;
     color: var(--purple);
@@ -82,7 +83,7 @@ input, textarea {
 /*Header*/
 
 .header {
-    height: 75px;
+    height: 100px;
     background-color: var(--blue);
     width: 100%;
     display: flex;
@@ -90,7 +91,7 @@ input, textarea {
 }
 
 .logo {
-    max-height: 80%;
+    max-height: 100%;
     margin: 7px;
 }
 
@@ -137,19 +138,16 @@ ul {
 .background-img {
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 300px;
 }
 
 .welcome {
     background-image: url('../images/exhibition-1863344_1920_resized.jpg');
 }
 
-.explore-header {
-    color: var(--yellow);
-}
-
 .explore {
     background-image: url('../images/andrew-ruiz-348421_resized.jpg');
-    color: var(--yellow);
 }
 
 .exhibitions {
@@ -194,11 +192,14 @@ ul {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: auto;
+    margin: 0 auto;
+}
+
+section {
+    margin: 5px 3px;
 }
 
 .container-text {
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,7 +288,7 @@ img {
         
         display: inline-block;
         text-decoration: none;
-        margin: 15px 20px 10px 20px;
+        margin: 15px 5px;
         z-index: 1;
         
     }
@@ -299,7 +300,7 @@ img {
         display: block;
         text-decoration: none;
         padding: 0px;
-        margin: 0px;
+        margin: 0 auto;
     }
 
     .menu-icon {
@@ -311,17 +312,21 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 1200px;
+        max-width: 1000px;
         align-content: center;
-        margin: auto;
+        margin: 0 auto;
 
     }
 
     .background-img {
-        width: 60%;
+        width: 65%;
         min-height: 500px;
         margin: 30px 15px;
         
+    }
+
+    .contactus {
+        width: 100%;
     }
     
     .container-text {
