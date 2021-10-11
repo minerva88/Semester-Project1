@@ -47,6 +47,37 @@ a, .anchor-btns {
     margin: 10px 20px;
 }
 
+.hyperlink {
+    font-family: var(--fonttext);
+    font-size: 1em;
+    text-decoration: underline;
+    color: var(--purple);
+    margin: 0 auto;
+}
+
+.white-hl {
+    color: var(--white);
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+label {
+    font-family: var(--fonttext);
+    font-weight: bold;
+    margin: 20px 40px;
+}
+
+input, textarea {
+    font-family: var(--fonttext);
+    color: black;
+    margin: 20px 40px;
+}
+
 
 /*Header*/
 
@@ -137,6 +168,10 @@ ul {
     background-image: url('../images/genoa-956405_1920_resized.jpg');
 }
 
+.contactus {
+    background-image: url('../images/donald-giannatti-Wj1D-qiOseE-unsplash_resized.jpg');
+}
+
 /*Buttons*/
 
 .explore-btns {
@@ -194,6 +229,15 @@ ul {
 .darkblue {
     background-color: var(--blue);
     color: var(--white);
+}
+
+/*Contact*/
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 /*Images*/
