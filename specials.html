@@ -9,25 +9,26 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Russo+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Special Events and Exhibitions</title>
 </head>
 <body>
     <header class="header">
         <img class="logo" src="images/open-science-735787.png" alt="logo">
-        <input type="checkbox" id="hamburger-menu">
-        <label class="hamburger-label" for="hamburger-menu"><img class="menu-icon" src="icons/menu_icon.png" alt="hamburger-menu"></label>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="exhibitions.html">Exhibitions</a></li>
-                <li><a class="active" href="specials.html">Specials</a></li>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="getinvolved.html">Get Involved</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <ul class="menu">
+            <li><a class="menuItem" href="index.html">Home</a></li>
+            <li><a class="menuItem" href="explore.html">Explore</a></li>
+            <li><a class="menuItem" href="exhibitions.html">Exhibitions</a></li>
+            <li><a class="active menuItem" href="specials.html">Specials</a></li>
+            <li><a class="menuItem" href="visit.html">Visit</a></li>
+            <li><a class="menuItem" href="getinvolved.html">Get Involved</a></li>
+            <li><a class="active menuItem" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+        </button>
     </header>
     <h1>SPECIAL EVENTS AND EXHIBITIONS</h1>
     <main class="container-main">
@@ -55,6 +56,6 @@
         <img class="social-icon" src="icons/twitter_grey.png" alt="twitter-icon">
         <img class="social-icon" src="icons/instagram_grey.png" alt="instagram-icon">
     </footer>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
